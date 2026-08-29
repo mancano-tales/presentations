@@ -1,6 +1,8 @@
 project:
   type: website
-  output-dir: _site
+  render:
+    - index.qmd
+    - talks/**/index.qmd
 
 website:
   title: "Apresentações — Tales Mançano"

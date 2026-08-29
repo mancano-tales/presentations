@@ -1,2 +1,10 @@
 /_site/
 /.quarto/
+
+**/*.quarto_ipynb
+
+# Artefatos que sobram na raiz quando o render individual (workaround do bug
+# do Quarto, ver README.md/publish.yml) é rodado sem limpar depois:
+/site_libs/
+/index-listing.json
+/*.html

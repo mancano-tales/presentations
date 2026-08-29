@@ -16,8 +16,40 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
-      - name: Render site
-        uses: quarto-dev/quarto-actions/render@v2
+      # Renderiza cada página individualmente, não o projeto inteiro de uma vez.
+      # Motivo: o passo interno do Quarto que move os arquivos renderizados para
+      # o output-dir tem um bug (reproduzido em 1.9.x, Windows e Linux) que aborta
+      # o lote inteiro na primeira página processada, deixando as demais de fora
+      # de _site/ mesmo tendo renderizado com sucesso. Renderizando uma página por
+      # vez, o "lote" tem tamanho 1 e o bug não tem chance de derrubar as outras;
+      # cada chamada ainda sai com código de erro por causa do bug (uma segunda
+      # tentativa de mover o mesmo arquivo, que já não existe mais na origem), por
+      # isso `|| true` — a verificação real de sucesso é a existência do .html.
+      - name: Render site (página por página — ver comentário acima)
+        shell: bash
+        run: |
+          set -e
+          for f in index.qmd $(find talks -name index.qmd); do
+            quarto render "$f" || true
+            out="_site/${f%.qmd}.html"
+            if [ ! -f "$out" ]; then
+              echo "::error::Render falhou de verdade para $f — $out não foi criado"
+              exit 1
+            fi
+          done
+
+      # Mesmo bug (ver acima) também impede o Quarto de copiar os recursos
+      # binários (slides.pdf/pptx) referenciados por link relativo em cada
+      # talk — copiamos manualmente, preservando a estrutura de pastas.
+      - name: Copiar recursos binários dos talks (workaround do mesmo bug)
+        shell: bash
+        run: |
+          set -e
+          find talks -type f ! -name "*.qmd" | while read -r f; do
+            dest="_site/$f"
+            mkdir -p "$(dirname "$dest")"
+            cp "$f" "$dest"
+          done
 
       - name: Publish to gh-pages
         uses: peaceiris/actions-gh-pages@v4
