@@ -1,0 +1,22 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Apresentações — Tales Mançano"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Todas as apresentações
+    right:
+      - icon: house
+        href: https://mancano-tales.github.io/
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: false
+  revealjs:
+    theme: simple
+    slide-number: true

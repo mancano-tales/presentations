@@ -1,0 +1,12 @@
+---
+title: "Antitruste como Política Industrial (SBS)"
+date: 2025-01-01
+date-modified: last-modified
+categories: ["antitruste", "SBS"]
+---
+
+> **Data aproximada**: o nome do arquivo de origem indica apenas "SBS-2025" — confirmar o dia exato do evento antes de divulgar.
+
+Slides da apresentação "Antitruste como Política Industrial", SBS 2025.
+
+<a class="talk-download" href="slides.pptx">Baixar slides (PPTX)</a>

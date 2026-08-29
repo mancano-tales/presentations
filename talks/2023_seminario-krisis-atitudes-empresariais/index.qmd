@@ -1,0 +1,10 @@
+---
+title: "Atitudes Empresariais — I Seminário KRISIS"
+date: 2023-01-01
+date-modified: last-modified
+categories: ["antitruste", "KRISIS", "2023"]
+---
+
+> **Data aproximada**: só se sabe o ano (2023) e o evento (I Seminário KRISIS) pelo nome do arquivo de origem — confirmar o dia exato antes de divulgar. Havia duas cópias byte-idênticas do arquivo na origem; mantida apenas uma.
+
+<a class="talk-download" href="slides.pptx">Baixar slides (PPTX)</a>

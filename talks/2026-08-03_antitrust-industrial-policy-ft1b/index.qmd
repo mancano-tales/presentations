@@ -1,0 +1,9 @@
+---
+title: "Antitrust as Industrial Policy"
+date: 2026-08-03
+categories: ["antitruste", "FT1B"]
+---
+
+Slides da apresentação "Antitrust as Industrial Policy" (painel/sessão FT1B, 2026-08-03), com Nahoum.
+
+<a class="talk-download" href="slides.pdf">Abrir slides (PDF)</a>

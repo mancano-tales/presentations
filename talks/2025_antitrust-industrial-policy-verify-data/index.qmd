@@ -1,0 +1,10 @@
+---
+title: "Antitrust as Industrial Policy (verify-data)"
+date: 2025-01-01
+date-modified: last-modified
+categories: ["antitruste", "rascunho"]
+---
+
+> **Aviso**: o nome original do arquivo ("VERIFY-data") sugere que esta é uma versão de rascunho/checagem de dados, não necessariamente a versão final apresentada em público. Revisar se ainda faz sentido manter, renomear ou descartar.
+
+<a class="talk-download" href="slides.pptx">Baixar slides (PPTX)</a>

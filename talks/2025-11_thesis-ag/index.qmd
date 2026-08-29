@@ -1,0 +1,10 @@
+---
+title: "Apresentação da Dissertação — Banca AG"
+date: 2025-11-18
+categories: ["dissertação", "banca"]
+---
+
+> **Aviso**: existem duas versões/exportações deste talk nos arquivos de origem, com tamanhos diferentes — mantidas as duas até o autor confirmar qual é a definitiva.
+
+<a class="talk-download" href="2025-11-18-AG_Slides-TMancano.pdf">Versão 1 (PDF)</a><br>
+<a class="talk-download" href="2025-11-18_TMancano_AG-Slides.pdf">Versão 2 (PDF)</a>

@@ -1,0 +1,10 @@
+---
+title: "Atitudes Empresariais e Internacionalização — 31º SIICUSP"
+date: 2023-01-01
+date-modified: last-modified
+categories: ["antitruste", "SIICUSP", "2023"]
+---
+
+> **Data aproximada**: só se sabe o ano (2023) e o evento (31º SIICUSP) pelo nome do arquivo de origem — confirmar o dia exato antes de divulgar.
+
+<a class="talk-download" href="slides.pptx">Baixar slides (PPTX)</a>

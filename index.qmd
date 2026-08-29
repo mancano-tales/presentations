@@ -1,0 +1,14 @@
+---
+title: "Apresentações"
+listing:
+  contents: talks
+  type: table
+  fields: [date, title, categories]
+  sort: "date desc"
+  sort-ui: false
+  filter-ui: true
+page-layout: full
+title-block-banner: false
+---
+
+Lista de apresentações (slides prontos e decks web) de Tales Mançano. Clique em um título para abrir os detalhes e baixar/ver o material.

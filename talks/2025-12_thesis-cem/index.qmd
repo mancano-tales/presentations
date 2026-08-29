@@ -1,0 +1,10 @@
+---
+title: "Apresentação da Dissertação — CEM"
+date: 2025-12-03
+categories: ["dissertação", "CEM"]
+---
+
+> **Aviso**: existem duas versões/exportações deste talk nos arquivos de origem, com tamanhos diferentes — mantidas as duas até o autor confirmar qual é a definitiva.
+
+<a class="talk-download" href="2025-12-03_TMancano_CEM-Slides.pdf">Versão 1 (PDF)</a><br>
+<a class="talk-download" href="2025-12-12-2025-12-3-Pres-CEM-Slides-TMancano.pdf">Versão 2 (PDF)</a>
