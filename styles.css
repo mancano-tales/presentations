@@ -1,8 +1,92 @@
+/* Paleta e tipografia "Terracota" — reaproveitadas de planning-repo/assets/styles.css
+   (ver 0-meta/plan/2026-08-30_Plano_Refresh_Visual_Presentations_Site.md da raiz) */
+:root {
+  --paper: #F7F2E8;
+  --paper-shade: #EFE9DC;
+  --paper-deep: #E5DDCB;
+  --ink: #1F1B17;
+  --ink-soft: #4A4138;
+  --ink-mute: #8B8074;
+  --ink-faint: #B5AC9F;
+  --accent: #D06224;
+  --accent-deep: #AE431E;
+  --accent-soft: #E0895A;
+  --accent-tint: #F5E5D5;
+  --rule: rgba(31, 27, 23, 0.20);
+  --rule-soft: rgba(31, 27, 23, 0.11);
+  --serif: 'Fraunces', Georgia, serif;
+  --sans: 'IBM Plex Sans', -apple-system, sans-serif;
+}
+
+body {
+  font-family: var(--sans);
+}
+
+h1, h2, h3, h4, .quarto-title-block .title {
+  font-family: var(--serif);
+  letter-spacing: -0.01em;
+}
+
+/* Largura de leitura confortável — page-layout: full esticaria o conteúdo full-bleed */
+#quarto-document-content {
+  max-width: 900px;
+}
+
+/* Tabela de apresentações */
+.quarto-listing-table.table {
+  border-top: 1px solid var(--rule);
+}
+
+.quarto-listing-table.table thead th {
+  border-bottom: 2px solid var(--rule);
+  color: var(--ink-soft);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+}
+
+.quarto-listing-table.table td,
+.quarto-listing-table.table th {
+  padding: 0.85rem 0.75rem;
+  border-bottom: 1px solid var(--rule-soft);
+}
+
+.quarto-listing-table.table tbody tr:hover {
+  background-color: var(--paper-shade);
+}
+
+.listing-title .title {
+  font-family: var(--serif);
+  font-weight: 500;
+}
+
+.listing-categories {
+  display: inline-block;
+  background-color: var(--accent-tint);
+  color: var(--accent-deep);
+  border-radius: 999px;
+  padding: 0.15rem 0.7rem;
+  font-size: 0.82rem;
+  font-weight: 500;
+}
+
+/* Botão de download de cada talk */
 .talk-download {
   display: inline-block;
   margin-top: 1rem;
-  padding: 0.5rem 1rem;
-  border: 1px solid currentColor;
+  padding: 0.5rem 1.1rem;
+  background-color: var(--accent);
+  color: #fff;
+  border: 1px solid var(--accent);
   border-radius: 4px;
   text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.15s ease;
+}
+
+.talk-download:hover {
+  background-color: var(--accent-deep);
+  border-color: var(--accent-deep);
+  color: #fff;
 }
