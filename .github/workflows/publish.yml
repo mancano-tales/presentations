@@ -51,6 +51,16 @@ jobs:
             cp "$f" "$dest"
           done
 
+      # O mesmo bug também derruba o styles.css da raiz: ele sobrevive ao
+      # render de index.qmd sozinho (é copiado como recurso do projeto),
+      # mas some de _site/ depois que o loop acima renderiza as páginas de
+      # talks/ em sequência (reproduzido localmente rodando o loop inteiro).
+      # Efeito: a página publicada carregava sem nenhum CSS customizado,
+      # silenciosamente, sem erro no build.
+      - name: Copiar styles.css (workaround do mesmo bug)
+        shell: bash
+        run: cp styles.css _site/styles.css
+
       - name: Publish to gh-pages
         uses: peaceiris/actions-gh-pages@v4
         with:
