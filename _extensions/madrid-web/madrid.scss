@@ -67,7 +67,8 @@ $presentation-line-height: 1.3;
   font-size: 1.6em;
 }
 .reveal .slides section.quarto-title-block .subtitle { color: $madrid-medio; font-size: 0.95em; margin-top: 0.6em; }
-.reveal .slides section.quarto-title-block .quarto-title-authors { justify-content: center; font-size: 0.75em; }
+.reveal .slides section.quarto-title-block .quarto-title-authors { display: flex; flex-wrap: wrap; justify-content: center; gap: 0 1.4em; font-size: 0.75em; }
+.reveal .slides section.quarto-title-block .quarto-title-author { width: auto !important; white-space: nowrap; }
 .reveal .slides section.quarto-title-block .quarto-title-affiliation,
 .reveal .slides section.quarto-title-block .institute { font-size: 0.65em; color: $tinta-suave; }
 
